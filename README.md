@@ -1,5 +1,7 @@
 # jumanpp
-jumanpp, juman, knp を含むイメージです。
+jumanpp の docker イメージです。
+
+jumanpp のほか、juman, knp も含んでいます。
 
 - [JUMAN](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN)
 - [JUMAN++](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN++)
@@ -54,7 +56,7 @@ jumanpp, juman, knp を含むイメージです。
     権 けん 権 名詞 6 普通名詞 1 * 0 * 0 "代表表記:権/けん 漢字読み:音 カテゴリ:抽象物"
     EOS
 
-knp を通す場合は、下記のようにシェルを用います。
+knp を使う場合は、下記のようにシェルを用います。
 
     $ echo "すもももももももものうち" | docker run -i --rm cosmicvelocity/jumanpp:1.02 sh -c "jumanpp | knp"
     # S-ID:1 KNP:4.17-CF1.1 DATE:2017/08/23 SCORE:-18.26197
